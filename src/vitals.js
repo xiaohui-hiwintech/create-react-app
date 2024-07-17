@@ -7,7 +7,9 @@ function getConnectionSpeed() {
     ? navigator['connection']['effectiveType']
     : '';
 }
-
+function test(){
+  console.log('test');
+}
 export function sendToVercelAnalytics(metric) {
   const analyticsId = process.env.REACT_APP_VERCEL_ANALYTICS_ID;
   if (!analyticsId) {
